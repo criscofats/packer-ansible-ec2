@@ -2,7 +2,7 @@
 set -ex
 
 sed -i "s/AABBccddeeff112233gghh/$api_token/g" ~/.ansible.cfg
-curl -L $satellite_manifest -o /tmp/manifest.zip
+curl -L $controller_manifest -o /tmp/manifest.zip
 
 sudo yum -y install @development
 sudo yum -y install python39
