@@ -14,18 +14,18 @@ curl -L $satellite_manifest -o /tmp/manifest.zip
 sudo yum-config-manager --enable rhel-7-server-rhui-optional-rpms
 sudo yum-config-manager --enable rhel-server-rhui-rhscl-7-rpms
 sudo yum -y install @development
-sudo yum -y install rh-python38
+sudo yum -y install rh-python36
 #scl enable rh-python36 bash ### doesn't work within a bash script
-source /opt/rh/rh-python38/enable
+source /opt/rh/rh-python36/enable
 export PYVENV_PROJDIR="/tmp/ansible_venv"
 mkdir -p $PYVENV_PROJDIR
-python3.8 -m pip install --user --upgrade pip setuptools
-python3.8 -m venv $PYVENV_PROJDIR
+python3.6 -m pip install --user --upgrade pip setuptools
+python3.6 -m venv $PYVENV_PROJDIR
 source $PYVENV_PROJDIR/bin/activate
-python3.8 -m pip install --upgrade pip setuptools
-python3.8 -m pip install wheel
-python3.8 -m pip install \
+python3.6 -m pip install --upgrade pip setuptools
+python3.6 -m pip install wheel
+python3.6 -m pip install \
    ansible==2.9.27 \
    jmespath
-ansible-galaxy collection install -r /tmp/requirements.yml --force -vvv
+ansible-galaxy collection install -r /tmp/requirements.yml --force
 history -c

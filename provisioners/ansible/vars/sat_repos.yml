@@ -43,7 +43,8 @@ satellite_products:
     repositories:
       - name:  Extra Packages for Enterprise Linux 7 x86_64
         content_type: yum
-        url: https://download.fedoraproject.org/pub/epel/7/x86_64/
+#        url: https://download.fedoraproject.org/pub/epel/7/x86_64/
+        url: https://dl.fedoraproject.org/pub/epel/7/x86_64/
         mirror_on_sync: no
   - name: Foreman Client
     repositories:
