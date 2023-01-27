@@ -12,3 +12,9 @@ crash.log
 
 # test json build files
 *build-test.json
+
+# custom build files
+*packer-build.json
+
+# extra_vars file
+aap_extra_vars.yml
