@@ -12,3 +12,6 @@ crash.log
 
 # test json build files
 *build-test.json
+
+# custom build files
+*packer-build.json
