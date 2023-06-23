@@ -10,8 +10,8 @@ crash.log
 # artifact build logs
 *artifact*
 
-# test json build files
-*build-test.json
+# json build files
+*.json
 
-# custom build files
-*packer-build.json
+# gpg encrypted files
+*.gpg
