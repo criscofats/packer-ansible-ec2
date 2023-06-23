@@ -6,6 +6,7 @@ curl -L $satellite_manifest -o /tmp/manifest.zip
 
 sudo yum -y install @development
 sudo yum -y install python39
+sudo yum -y install podman
 
 export PYVENV_PROJDIR="/tmp/ansible_venv"
 mkdir -p $PYVENV_PROJDIR
