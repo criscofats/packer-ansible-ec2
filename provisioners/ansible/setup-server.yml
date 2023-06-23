@@ -7,7 +7,7 @@
   tasks:
     - name: download AAP
       include_role:
-        name: ../../roles/aap_download
+        name: ../roles/aap_download
 
 - name: AAP Controller pre-install preparations
   hosts: 'all'
