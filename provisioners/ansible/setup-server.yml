@@ -7,7 +7,7 @@
   tasks:
     - name: download AAP
       include_role:
-        name: ../../roles/aap_download
+        name: /tmp/roles/aap_download
 
 - name: AAP Controller pre-install preparations
   hosts: 'all'
@@ -113,17 +113,17 @@
     debug:
       var: ansible_default_ipv4.address
   - include_role:
-      name: ../../roles/user_accounts
+      name: /tmp/roles/user_accounts
   - include_role:
-      name: ../../roles/common
+      name: /tmp/roles/common
   - include_role:
-      name: ../../roles/connectivity_test
+      name: /tmp/roles/connectivity_test
   - include_role:
-      name: ../../roles/common
+      name: /tmp/roles/common
   - include_role:
-      name: ../../roles/control_node
+      name: /tmp/roles/control_node
   - include_role:
-      name: ../../roles/code_server
+      name: /tmp/roles/code_server
 #### end automation controller node configuration
 
   - name: unregister
