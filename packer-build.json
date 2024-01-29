@@ -2,13 +2,13 @@
     "variables": {
         "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
-        "ami_name": "Satellite 6.13 {{isotime `2006-01-02-150405`}}",
-        "aws_region": "us-east-2",
+        "ami_name": "Satellite 6.14 {{isotime `2006-01-02-150405`}}",
+        "aws_region": "us-east-1",
         "ssh_username": "ec2-user",
         "vpc_id": "EXISTING-VPC-ID",
         "subnet_id": "EXISTING-SUBNET-ID",
         "red_hat_activation_key": "AK-Sat",
-        "red_hat_org_id": "12345678",
+        "red_hat_org_id": "16317861",
         "ah_api_token": "00998877665544332211",
         "satellite_manifest_url": "http://some.location.dom/manifest.zip"
     },
@@ -28,7 +28,7 @@
         "source_ami_filter": {
             "filters": {
                 "virtualization-type": "hvm",
-                "name": "RHEL-8.8.*_HVM-*-x86_64-2-Hourly2-GP2",
+                "name": "RHEL-8.8.0_HVM-20230802-x86_64-64-Hourly2-GP2",
                 "root-device-type": "ebs"
             },
             "owners": ["309956199498"],
