@@ -15,3 +15,6 @@ crash.log
 
 # gpg encrypted files
 *.gpg
+
+# manifests
+*manifest.zip
